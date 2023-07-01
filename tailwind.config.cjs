@@ -13,5 +13,5 @@ module.exports = {
 	plugins: [],
 	darkMode: 'class',
 	mode: 'jit',
-	corePlugins: {preflight: false,},
+	corePlugins: {preflight: true,},
 }
