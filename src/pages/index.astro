@@ -11,11 +11,11 @@ import Dioxus from '../components/dioxus.astro';
 		<h1 class="text-white text-7xl md:text-9xl leading-0 m-0 p-12">Build <span class="bg-clip-text text-transparent bg-gradient-to-r from-[#4FD9BC] to-[#52C8E8]">Safety</span></h1>
 
 		<div class="flex flex-row gap-12 xl:gap-24 m-0 p-12">
-			<a id="ancre" class="flex w-fit bg-white hover:bg-transparent duration-300 hover:text-white border border-solid border-white items-center px-6 py-2 text-black font-bold rounded-md no-underline whitespace-nowrap" href="#">
+			<a id="ancre" class="flex w-fit bg-white hover:bg-transparent duration-300 hover:text-white border border-solid border-white items-center px-6 py-2 text-black font-bold rounded-md no-underline whitespace-nowrap" href={`${import.meta.env.BASE_URL}extension`}>
 				Get started
 			</a>
 
-			<a id="ancre" class="flex w-fit bg-gradient-to-tl from-[#4FD9BC] to-[#52C8E8] rounded-md drop-shadow-[0_0_40px_rgba(0,255,255,3)] no-underline" href="#">
+			<a id="ancre" class="flex w-fit bg-gradient-to-tl from-[#4FD9BC] to-[#52C8E8] rounded-md drop-shadow-[0_0_40px_rgba(0,255,255,3)] no-underline" href=`${import.meta.env.BASE_URL}view-extension`>
 				<div class="underline-none inline-flex items-center grow m-[1px] px-6 py-2 bg-black rounded-md text-white font-bold hover:bg-transparent duration-150 whitespace-nowrap">
 					Get a demo
 					<svg width="30px" height="30px" viewBox="0 0 24 24" stroke="white" stroke-width="2">
@@ -127,7 +127,7 @@ import Dioxus from '../components/dioxus.astro';
 	</div>
 
 
-	<div class="flex flex-col w-full items-center pt-24">
+	<div class="flex flex-col w-full items-center pt-24 gap-3">
 		<h1 class="text-left w-full text-5xl mb-0">FAQ</h1>
 
 		<details class="bg-transparent w-[100%] border-b-2 border-solid border-[#4FDAB8] border-0 list-none cursor-pointer">
@@ -135,7 +135,7 @@ import Dioxus from '../components/dioxus.astro';
 				<h2 class="text-left hover:text-neutral-500 duration-150">Our company uses another password manager. Is it difficult to migrate to BlockShell ?</h2>
 			</summary>
 
-			<p class="flex m-8 text-justify">
+			<p class="flex m-8 text-justify text-sm">
 				The BlockShell team will help you to migrate your data from your old password manager to BlockShell. You will be able to import your data in only one transaction to lower fees.
 			</p>
 		</details>
@@ -145,7 +145,7 @@ import Dioxus from '../components/dioxus.astro';
 				<h2 class="text-left hover:text-neutral-500 duration-150">How does BlockShell work ?</h2>
 			</summary>
 
-			<p class="flex m-8 text-justify">
+			<p class="flex m-8 text-justify text-sm">
 				BlockShell is a blockchain based password manager that uses cryptography to safely store your data on Gnosis Chain.
 			</p>
 		</details>
@@ -155,7 +155,7 @@ import Dioxus from '../components/dioxus.astro';
 				<h2 class="text-left hover:text-neutral-500 duration-150">Does BlockShell requires a KYC ?</h2>
 			</summary>
 
-			<p class="flex ml-8">
+			<p class="flex m-8 text-justify text-sm">
 				No ! You just have to connect your wallet to BlockShell and you are ready to go !
 			</p>
 		</details>
@@ -165,7 +165,7 @@ import Dioxus from '../components/dioxus.astro';
 				<h2 class="text-left hover:text-neutral-500 duration-150">Who is this solution for ?</h2>
 			</summary>
 
-			<p class="flex ml-8 text-left">
+			<p class="flex m-8 text-justify text-sm">
 				This solution is made for individuals and businesses who want to safely store their passwords and data on Gnosis Chain. This solution is also made for people who want to use a password manager that is not centralized and less vulnerable to cyber attacks.
 			</p>
 		</details>
@@ -175,7 +175,7 @@ import Dioxus from '../components/dioxus.astro';
 				<h2 class="text-left hover:text-neutral-500 duration-150">Can we use BlockShell on different platforms with the same credendentials ?</h2>
 			</summary>
 
-			<p class="flex ml-8 text-left">
+			<p class="flex m-8 text-justify text-sm">
 				Yes of course ! You can use BlockShell on multiple platforms with same credentials. You just have to connect your wallet (independently from the platform) to have access to your passwords.
 			</p>
 		</details>
