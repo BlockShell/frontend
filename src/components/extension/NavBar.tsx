@@ -9,7 +9,7 @@ export const Navbar = () => {
     if (isLocked) return null;
 
     return (
-        <nav className="flex items-center gap-4 p-1 border-b borde-solid border-slate-200 bg-slate-100">
+        <nav className="flex items-center gap-4 p-1 border-b borde-solid border-neutral-200 bg-neutral-100">
             <LockButton />
             <SearchBar />
             <div className="ml-auto">

@@ -24,7 +24,7 @@ export const DeleteCredentialButton = ({
     }
 
     return (
-        <button onClick={deleteCredential} className="inline-flex items-center border border-solid border-slate-400 rounded text-sm px-1">
+        <button onClick={deleteCredential} className="inline-flex items-center border border-solid border-neutral-400 rounded text-sm px-1">
             {loading &&
                 <svg className="animate-spin ml-1 mr-3 h-3 w-3 text-black" fill="none" viewBox="0 0 24 24">
                     <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>

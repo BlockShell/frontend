@@ -38,14 +38,14 @@ export const AddCredentialsForm = () => {
     }
 
     return (
-        <form onSubmit={handleSubmit} className="flex flex-col gap-4 items-center m-4 p-2 bg-slate-100 border border-solid border-slate-200 rounded">
+        <form onSubmit={handleSubmit} className="flex flex-col gap-4 items-center m-4 p-2 bg-neutral-100 border border-solid border-neutral-200 rounded">
                 <h1 className="text-2xl font-bold">Add Credentials</h1>
                 <div className="flex flex-col gap-1 items-center w-full">
-                    <input value={website} onChange={handleWebsiteChange} className="w-full border border-solid border-slate-400 rounded px-1" type="text" placeholder="Website" required/>
-                    <input value={username} onChange={handleUsernameChange} className="w-full border border-solid border-slate-400 rounded px-1" type="text" placeholder="Username" required/>
-                    <input value={password} onChange={handlePasswordChange} className="w-full border border-solid border-slate-400 rounded px-1" type="password" placeholder="Password" required/>
+                    <input value={website} onChange={handleWebsiteChange} className="w-full border border-solid border-neutral-400 rounded px-1" type="text" placeholder="Website" required/>
+                    <input value={username} onChange={handleUsernameChange} className="w-full border border-solid border-neutral-400 rounded px-1" type="text" placeholder="Username" required/>
+                    <input value={password} onChange={handlePasswordChange} className="w-full border border-solid border-neutral-400 rounded px-1" type="password" placeholder="Password" required/>
                 </div>
-                <button className="inline-flex items-center border border-solid border-slate-400 rounded px-2 py-1" type="submit" disabled={loading}>
+                <button className="inline-flex items-center border border-solid border-neutral-400 rounded px-2 py-1" type="submit" disabled={loading}>
                     {loading && 
                         <svg className="animate-spin -ml-1 mr-3 h-5 w-5 text-black" fill="none" viewBox="0 0 24 24">
                             <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>

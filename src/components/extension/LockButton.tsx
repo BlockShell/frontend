@@ -6,7 +6,7 @@ export const LockButton = () => {
 
     return (
         <button
-            className="inline-flex border border-solid border-slate-400 hover:bg-slate-200 rounded p-1"
+            className="inline-flex border border-solid border-neutral-400 hover:bg-neutral-200 rounded p-1"
             aria-label="Lock"
             onClick={() => {
                 setIsLocked(true);

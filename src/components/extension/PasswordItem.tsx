@@ -15,7 +15,7 @@ export const PasswordItem = ({
     password
 }: PasswordItemProps) => {
     return (
-        <div className="flex flex-col gap-6 rounded-md p-2 bg-slate-100">
+        <div className="flex flex-col gap-6 rounded-md p-2 bg-neutral-100">
             <div className="flex flex-row items-center">
                 <h1 className="text-2xl font-bold">{website}</h1>
                 <div className="ml-auto">

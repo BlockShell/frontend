@@ -15,7 +15,7 @@ export const PasswordOutput = ({
         <div className="flex flex-row items-center gap-2">
             <p className="text-sm italic underline underline-offset-4">Password:</p>
             <p className="text-sm">{showPassword ? password : hiddenPassword}</p>
-            <button className="inline-flex ml-auto border border-solid border-slate-400 hover:bg-slate-200 text-sm font-semibold rounded px-1" onClick={() => setShowPassword(!showPassword)}>
+            <button className="inline-flex ml-auto border border-solid border-neutral-400 hover:bg-neutral-200 text-sm font-semibold rounded px-1" onClick={() => setShowPassword(!showPassword)}>
                 {showPassword ? "Hide" : "Show"}
             </button>
         </div>
